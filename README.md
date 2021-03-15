@@ -32,6 +32,4 @@ _La duracion solo permite numeros_
 
 _Año sola mente permite la fecha exacta_
 
-_IMPORTANTE QUE EN EL GENERO USES EL CODIGO(ID) SI NO, NO SE GUARDARA BIEN EN LA BASE DE DATOS_
-
-_Puedes selecionar SI(1) has visto la pelicula o NO(0) la has visto_
+_Puedes selecionar SI has visto la pelicula o NO la has visto_
