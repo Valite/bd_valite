@@ -53,7 +53,7 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/guardar.png" alt=""/>
+										<img src="images/046-download.png" alt=""/>
 									</span>
 									<a href="peliculas.php">
 										<h2>Guardar Peliculas</h2>
@@ -64,12 +64,12 @@
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src="images/todaspelis.png" alt="" />
 									</span>
 									<a href="1.php">
-										<h2>Lorem</h2>
+										<h2>Muestra todas las peliculas</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Visualiza todas las peliculas que tienes en la base de datos</p>
 										</div>
 									</a>
 								</article>
