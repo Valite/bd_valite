@@ -1,3 +1,22 @@
+<?php
+	$servidor="localhost";
+	$usuario="root";
+	$clave="";
+	$baseDeDatos="BD_PELICULAS";
+
+	$enlace=mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
+
+	if(!$enlace){
+		echo"Error en la conexion con el servidor";
+	}
+	$sql = "CREATE DATABASE BD_PELICULAS";
+
+	if ($enlace->query($sql) === TRUE) {
+		echo "Database created successfully";
+	} else {
+		echo "Error creating database: " . $conn->error;
+	}
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -77,7 +96,7 @@
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
-									<a href="peliculas.php">
+									<a href="2.php">
 										<h2>Feugiat</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -236,6 +255,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
