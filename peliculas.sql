@@ -94,5 +94,5 @@ INSERT INTO GENEROS(id,nombre,descripcion) VALUES
 (14,'Fantástico','Historias fantásticas e imaginarias');
 
 INSERT INTO VISTO(id,nombre) VALUES
-(0,"Si"),
-(1,"No");
+(0,"No"),
+(1,"Si");

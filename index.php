@@ -1,22 +1,3 @@
-<?php
-	$servidor="localhost";
-	$usuario="root";
-	$clave="";
-	$baseDeDatos="BD_PELICULAS";
-
-	$enlace=mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
-
-	if(!$enlace){
-		echo"Error en la conexion con el servidor";
-	}
-	$sql = "CREATE DATABASE BD_PELICULAS";
-
-	if ($enlace->query($sql) === TRUE) {
-		echo "Database created successfully";
-	} else {
-		echo "Error creating database: " . $conn->error;
-	}
-?>
 <!DOCTYPE HTML>
 <html>
 	<head>
