@@ -1,14 +1,16 @@
 <?php
-	$servidor="localhost";
-	$usuario="root";
-	$clave="";
-	$baseDeDatos="BD_PELICULAS";
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: /login/login.php");
+    exit;
+}
 
-	$enlace=mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
+// Include config file
+require_once "/login/config.php";
 
-	if(!$enlace){
-		echo"Error en la conexion con el servidor";
-	}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -52,6 +54,8 @@
 							<li><a href="peliculas.php">.</a></li>
 							<li><a href="peliculas.php">..</a></li>
 							<li><a href="peliculas.php">...</a></li>
+							<li><a href="login/reset-password.php" class="btn btn-warning">Reset Your Password</a></li>
+        					<li><a href="login/logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a></li>
 						</ul>
 					</nav>
 
